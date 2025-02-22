@@ -36,8 +36,9 @@ refs.searchMenu.addEventListener("submit", async (event) => {
     params.query = wordKey;
     refs.gallery.innerHTML = "";
     refs.searchInput.value = "";
+    hideLoadMoreBtn();
     refs.loader.style.display = "inline-block";
-    try {
+        try {
         const result = await getImages(wordKey, params.page);
         params.total = result.totalHits;
         if (result.images.length === 0) {
