@@ -10,10 +10,15 @@
     <body>
         <form class="search-menu">
             <input type="text" class="search-input" required placeholder="Search images..." />
-            <button class="search-btn" >Search</button>
+            <button class="search-btn">Search</button>
         </form>
-        <span class="loader">Loading</span>
         <ul class="gallery"></ul>
+        <span class="loader">Loading</span>
+        <div>
+            <button type="button" class="btn-load" data-action="load-more">
+                <span class="label">Load more</span>
+            </button>
+        </div>
         <script src="./main.js" type="module"></script>
     </body>
 </html>
